@@ -1,0 +1,37 @@
+<html>
+<div class="flex-container-center">
+
+    <div class="login-card">
+        <h1>Login</h1>
+        <form method="POST" enctype="application/json">
+
+            <label>Email</label>
+            <input name="email" type="email" />
+            <label>Password</label>
+            <input name="password" type="password" />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+</html>
+
+<style>
+    .flex-container-center {
+
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: grey;
+    }
+
+    .login-card {
+        padding: 20px;
+        background: white;
+        border-radius: 20px;
+        display: block;
+        max-width: 200px;
+    }
+</style>

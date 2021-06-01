@@ -1,0 +1,63 @@
+{
+  "name": "hapi-oauth2-server",
+  "version": "0.0.1",
+  "description": "A plugin that turns a hapi.js server into an oAuth2.0 compliant auth provider.",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "nodemon ./test/server",
+    "test": "lab -a @hapi/code -I \"__core-js_shared__,CSS,regeneratorRuntime,core\" -L",
+    "lint": "eslint . --fix"
+  },
+  "author": "Michael Alan Cohen",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/boom": "9.x.x",
+    "@hapi/vision": "^6.1.0",
+    "@hapipal/haute-couture": "4.x.x",
+    "@hapipal/schwifty": "6.x.x",
+    "@jmondi/oauth2-server": "^1.1.0-beta.0",
+    "argon2": "^0.27.2",
+    "handlebars": "^4.7.7",
+    "joi": "17.x.x",
+    "jsonwebtoken": "^8.5.1",
+    "objection": "2.x.x",
+    "rand-token": "^1.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "schwifty": "^5.4.1",
+    "uuid": "^8.3.2"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "@hapi/eslint-plugin-hapi"
+    ],
+    "extends": [
+      "@hapi/eslint-config-hapi"
+    ]
+  },
+  "peerDependencies": {
+    "knex": "0.21.x"
+  },
+  "devDependencies": {
+    "@hapi/code": "8.x.x",
+    "@hapi/eslint-config-hapi": "13.x.x",
+    "@hapi/eslint-plugin-hapi": "4.x.x",
+    "@hapi/glue": "8.x.x",
+    "@hapi/hapi": "20.x.x",
+    "@hapi/hoek": "9.x.x",
+    "@hapi/lab": "24.x.x",
+    "@hapipal/confidence": "6.x.x",
+    "@hapipal/hpal": "3.x.x",
+    "@hapipal/hpal-debug": "2.x.x",
+    "@hapipal/toys": "3.x.x",
+    "babel-eslint": "10.x.x",
+    "dotenv": "8.x.x",
+    "eslint": "7.x.x",
+    "exiting": "6.x.x",
+    "knex": "0.21.x",
+    "object-query-string": "^1.1.2",
+    "pg": "^8.6.0",
+    "query-string": "^7.0.0",
+    "sqlite3": "5.x.x"
+  }
+}
