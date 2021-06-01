@@ -1,5 +1,5 @@
 {
-  "name": "hapi-oauth2-server",
+  "name": "hapi-oauth2",
   "version": "0.0.1",
   "description": "A plugin that turns a hapi.js server into an oAuth2.0 compliant auth provider.",
   "main": "lib/index.js",
